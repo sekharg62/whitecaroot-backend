@@ -212,7 +212,7 @@ router.post(
       }
 
       // Return the file URL (adjust based on your hosting setup)
-      const fileUrl = `uploads/${req.file.filename}`;
+      const fileUrl = `/uploads/${req.file.filename}`;
 
       res.json({
         message: "File uploaded successfully",
